@@ -71,6 +71,23 @@ def find_3_letter_words(book_name):
 
 find_3_letter_words("book.txt")
 
+#Write a function that forces users to enter a number
+def force_multiple_6():
+    """
+    forces multiple of 6 number
+    :return: int
+    """
+    while True:
+        num = input("Please give me a multiple of 6:")
+        try:
+            num = int(num)
+            if num % 6 == 0:
+                return num #trying to check it's a multiple of 6
+            else:
+                print("Needs to be a multiple of 6")
+        except ValueError:
+            print("I need a number")
+print(force_multiple_6())
 
 
 
